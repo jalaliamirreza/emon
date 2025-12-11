@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SAP HANA Database Monitoring - In-depth Zabbix monitoring with memory analytics and replication monitoring.">
+  <title>SAP HANA Database Monitoring - ERP Monitoring | Zabbix Templates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230a0e17' width='100' height='100' rx='20'/><circle cx='50' cy='50' r='30' fill='none' stroke='%2300d4ff' stroke-width='4'/><circle cx='50' cy='50' r='8' fill='%2300d4ff'/></svg>">
+</head>
+<body data-solution="sap-hana">
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="../index.html" class="navbar-brand">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#111827"/><circle cx="20" cy="20" r="12" stroke="#00d4ff" stroke-width="2" fill="none"/><circle cx="20" cy="20" r="4" fill="#00d4ff"/><circle cx="20" cy="8" r="2" fill="#00d4ff"/><circle cx="20" cy="32" r="2" fill="#00d4ff"/><circle cx="8" cy="20" r="2" fill="#00d4ff"/><circle cx="32" cy="20" r="2" fill="#00d4ff"/></svg>
+        <span>ERP Monitoring</span>
+      </a>
+      <div class="navbar-menu">
+        <ul class="navbar-links">
+          <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="../solutions.html" class="active" data-i18n="nav.solutions">Solutions</a></li>
+          <li><a href="../about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="../contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="navbar-actions"><div class="lang-toggle"><button data-lang="en" class="active">EN</button><button data-lang="de">DE</button></div></div>
+        <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="solution-hero">
+    <div class="container">
+      <div class="breadcrumb mb-3">
+        <a href="../index.html" data-i18n="nav.home">Home</a><span>/</span>
+        <a href="../solutions.html" data-i18n="nav.solutions">Solutions</a><span>/</span>
+        <span>SAP HANA</span>
+      </div>
+      <div class="solution-hero-content">
+        <div class="fade-in">
+          <div class="solution-hero-icon" style="border-color: var(--sap-color);">
+            <svg viewBox="0 0 24 24" fill="var(--sap-color)"><path d="M12.342 14.481l-3.097 3.097h4.768v3.097H3.327v-3.097l3.097-3.097h5.918zM20.673 3.325v3.097l-3.097 3.097H3.327V6.422l3.097-3.097h14.249z"/></svg>
+          </div>
+          <h1 data-i18n="solutions.sapHana.name">SAP HANA Database Monitoring</h1>
+          <p data-i18n="solutions.sapHana.description">In-depth monitoring for SAP HANA with memory analytics, backup status, and replication monitoring.</p>
+          <ul class="solution-features-list"></ul>
+          <div class="hero-buttons mt-4">
+            <a href="../contact.html" class="btn btn-primary" data-i18n="solutionDetail.requestDemo">Request Demo</a>
+            <a href="#" class="btn btn-secondary" data-i18n="solutionDetail.documentation">Documentation</a>
+          </div>
+        </div>
+        <div class="solution-visual fade-in slide-in-right">
+          <div class="solution-diagram">
+            <svg viewBox="0 0 300 250" fill="none" style="width: 100%;">
+              <rect x="100" y="10" width="100" height="60" rx="8" fill="#1a2234" stroke="var(--sap-color)" stroke-width="2"/>
+              <text x="150" y="45" fill="white" text-anchor="middle" font-size="12">SAP HANA</text>
+              <rect x="100" y="180" width="100" height="60" rx="8" fill="#1a2234" stroke="#00d4ff" stroke-width="2"/>
+              <text x="150" y="215" fill="#00d4ff" text-anchor="middle" font-size="12">Zabbix Server</text>
+              <path d="M150 70 L150 180" stroke="#00d4ff" stroke-width="2" stroke-dasharray="5,5"/>
+              <circle cx="50" cy="120" r="25" fill="#1a2234" stroke="#00d4ff" stroke-width="1"/>
+              <text x="50" y="125" fill="#00d4ff" text-anchor="middle" font-size="10">280+</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header fade-in"><h2 data-i18n="solutionDetail.metrics">Monitored Metrics</h2></div>
+      <div class="metrics-grid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in"><h2 data-i18n="solutionDetail.benefits">Benefits</h2></div>
+      <div class="benefits-grid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-section fade-in">
+        <h2 data-i18n="cta.title">Ready to Transform Your Monitoring?</h2>
+        <p data-i18n="cta.description">Get in touch with our team to discuss your monitoring requirements.</p>
+        <a href="../contact.html" class="btn btn-primary btn-lg" data-i18n="cta.button">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="navbar-brand"><svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="#111827"/><circle cx="20" cy="20" r="12" stroke="#00d4ff" stroke-width="2" fill="none"/><circle cx="20" cy="20" r="4" fill="#00d4ff"/></svg><span>ERP Monitoring</span></a>
+          <p data-i18n="footer.description">Professional monitoring solutions for enterprise systems.</p>
+        </div>
+        <div class="footer-column"><h4 data-i18n="footer.solutions">Solutions</h4><ul class="footer-links"><li><a href="sap-s4hana.html">SAP S/4HANA</a></li><li><a href="sap-ecc.html">SAP ECC</a></li></ul></div>
+        <div class="footer-column"><h4 data-i18n="footer.company">Company</h4><ul class="footer-links"><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+        <div class="footer-column"><h4 data-i18n="footer.legal">Legal</h4><ul class="footer-links"><li><a href="#">Privacy Policy</a></li><li><a href="#">Imprint</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span data-i18n="footer.copyright">2024 ERP Monitoring. All rights reserved.</span></p></div>
+    </div>
+  </footer>
+  <script src="../js/translations.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

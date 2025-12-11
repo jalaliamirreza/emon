@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ERP Monitoring Solutions - Comprehensive Zabbix monitoring templates for SAP, Oracle, Siemens, AWS, and GCP enterprise systems.">
+  <title>Monitoring Solutions - ERP Monitoring | Zabbix Templates</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230a0e17' width='100' height='100' rx='20'/><circle cx='50' cy='50' r='30' fill='none' stroke='%2300d4ff' stroke-width='4'/><circle cx='50' cy='50' r='8' fill='%2300d4ff'/></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="8" fill="#111827"/>
+          <circle cx="20" cy="20" r="12" stroke="#00d4ff" stroke-width="2" fill="none"/>
+          <circle cx="20" cy="20" r="4" fill="#00d4ff"/>
+          <circle cx="20" cy="8" r="2" fill="#00d4ff"/>
+          <circle cx="20" cy="32" r="2" fill="#00d4ff"/>
+          <circle cx="8" cy="20" r="2" fill="#00d4ff"/>
+          <circle cx="32" cy="20" r="2" fill="#00d4ff"/>
+        </svg>
+        <span>ERP Monitoring</span>
+      </a>
+
+      <div class="navbar-menu">
+        <ul class="navbar-links">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="solutions.html" class="active" data-i18n="nav.solutions">Solutions</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+          <div class="lang-toggle">
+            <button data-lang="en" class="active">EN</button>
+            <button data-lang="de">DE</button>
+          </div>
+        </div>
+
+        <button class="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html" data-i18n="nav.home">Home</a>
+        <span>/</span>
+        <span data-i18n="nav.solutions">Solutions</span>
+      </div>
+      <h1 data-i18n="solutions.title">Monitoring Solutions</h1>
+      <p data-i18n="solutions.subtitle">Comprehensive monitoring for your entire enterprise stack. From ERP to cloud infrastructure.</p>
+    </div>
+  </header>
+
+  <!-- Solutions Filter & Grid -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Buttons -->
+      <div class="solutions-filter fade-in">
+        <button class="filter-btn active" data-filter="all" data-i18n="solutions.filterAll">All</button>
+        <button class="filter-btn" data-filter="oracle" data-i18n="solutions.filterOracle">Oracle</button>
+        <button class="filter-btn" data-filter="sap" data-i18n="solutions.filterSAP">SAP</button>
+        <button class="filter-btn" data-filter="dassault">Dassault</button>
+        <button class="filter-btn" data-filter="siemens">Siemens</button>
+        <button class="filter-btn" data-filter="gcp">GCP</button>
+        <button class="filter-btn" data-filter="aws">AWS</button>
+      </div>
+
+      <div class="solutions-grid">
+        <!-- Oracle Solutions -->
+        <a href="solutions/oracle-apex.html" class="solution-card fade-in" data-category="oracle">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16.412 4.412h-8.82a7.588 7.588 0 0 0-.008 15.176h8.828a7.588 7.588 0 0 0 0-15.176zm-.193 12.502H7.786a4.915 4.915 0 0 1 0-9.828h8.433a4.914 4.914 0 1 1 0 9.828z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.oracleApex.category">Oracle</span>
+          <h3 data-i18n="solutions.oracleApex.name">Oracle APEX Monitoring</h3>
+          <p data-i18n="solutions.oracleApex.description">Comprehensive monitoring for Oracle Application Express environments with real-time performance metrics.</p>
+        </a>
+
+        <a href="solutions/oracle-database.html" class="solution-card fade-in stagger-1" data-category="oracle">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16.412 4.412h-8.82a7.588 7.588 0 0 0-.008 15.176h8.828a7.588 7.588 0 0 0 0-15.176zm-.193 12.502H7.786a4.915 4.915 0 0 1 0-9.828h8.433a4.914 4.914 0 1 1 0 9.828z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.oracleDB.category">Oracle</span>
+          <h3 data-i18n="solutions.oracleDB.name">Oracle Database Monitoring</h3>
+          <p data-i18n="solutions.oracleDB.description">Deep visibility into Oracle Database instances including RAC, Data Guard, and performance analytics.</p>
+        </a>
+
+        <a href="solutions/oracle-netsuite.html" class="solution-card fade-in stagger-2" data-category="oracle">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16.412 4.412h-8.82a7.588 7.588 0 0 0-.008 15.176h8.828a7.588 7.588 0 0 0 0-15.176zm-.193 12.502H7.786a4.915 4.915 0 0 1 0-9.828h8.433a4.914 4.914 0 1 1 0 9.828z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.oracleNetsuite.category">Oracle</span>
+          <h3 data-i18n="solutions.oracleNetsuite.name">Oracle NetSuite Monitoring</h3>
+          <p data-i18n="solutions.oracleNetsuite.description">End-to-end monitoring for NetSuite ERP with transaction tracking and SLA compliance.</p>
+        </a>
+
+        <!-- SAP Solutions -->
+        <a href="solutions/sap-s4hana.html" class="solution-card fade-in" data-category="sap">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.342 14.481l-3.097 3.097h4.768v3.097H3.327v-3.097l3.097-3.097h5.918zM20.673 3.325v3.097l-3.097 3.097H3.327V6.422l3.097-3.097h14.249z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.sapS4hana.category">SAP</span>
+          <h3 data-i18n="solutions.sapS4hana.name">SAP S/4HANA Monitoring</h3>
+          <p data-i18n="solutions.sapS4hana.description">Intelligent monitoring for SAP S/4HANA systems with predictive analytics and automated alerting.</p>
+        </a>
+
+        <a href="solutions/sap-ecc.html" class="solution-card fade-in stagger-1" data-category="sap">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.342 14.481l-3.097 3.097h4.768v3.097H3.327v-3.097l3.097-3.097h5.918zM20.673 3.325v3.097l-3.097 3.097H3.327V6.422l3.097-3.097h14.249z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.sapEcc.category">SAP</span>
+          <h3 data-i18n="solutions.sapEcc.name">SAP ECC 6.0 Monitoring</h3>
+          <p data-i18n="solutions.sapEcc.description">Comprehensive monitoring for SAP ECC environments including RFC, batch jobs, and system health.</p>
+        </a>
+
+        <a href="solutions/sap-hana.html" class="solution-card fade-in stagger-2" data-category="sap">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.342 14.481l-3.097 3.097h4.768v3.097H3.327v-3.097l3.097-3.097h5.918zM20.673 3.325v3.097l-3.097 3.097H3.327V6.422l3.097-3.097h14.249z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.sapHana.category">SAP</span>
+          <h3 data-i18n="solutions.sapHana.name">SAP HANA Database Monitoring</h3>
+          <p data-i18n="solutions.sapHana.description">In-depth monitoring for SAP HANA with memory analytics, backup status, and replication monitoring.</p>
+        </a>
+
+        <!-- PLM Solutions -->
+        <a href="solutions/dassault-3dexperience.html" class="solution-card fade-in" data-category="dassault">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9zM12 4.15L5 8.09v7.82l7 3.94l7-3.94V8.09l-7-3.94z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.dassault.category">Dassault</span>
+          <h3 data-i18n="solutions.dassault.name">Dassault 3DEXPERIENCE Monitoring</h3>
+          <p data-i18n="solutions.dassault.description">Full-stack monitoring for 3DEXPERIENCE platform including ENOVIA, CATIA, and SIMULIA services.</p>
+        </a>
+
+        <a href="solutions/siemens-teamcenter.html" class="solution-card fade-in stagger-1" data-category="siemens">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.teamcenter.category">Siemens</span>
+          <h3 data-i18n="solutions.teamcenter.name">Siemens Teamcenter Monitoring</h3>
+          <p data-i18n="solutions.teamcenter.description">Enterprise PLM monitoring for Teamcenter with workflow tracking and service health checks.</p>
+        </a>
+
+        <!-- Cloud Solutions -->
+        <a href="solutions/gcp.html" class="solution-card fade-in" data-category="gcp">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.19 2.38a9.344 9.344 0 0 0-9.234 6.893c.053-.02-.055.013 0 0-3.875 2.551-3.922 8.11-.247 10.941l.006-.007-.007.03a6.717 6.717 0 0 0 4.077 1.356h5.173l.03.03h5.192c6.687.053 9.376-8.605 3.835-12.35a9.365 9.365 0 0 0-8.825-6.893zm.287 2.673c3.206-.089 6.138 2.358 6.138 5.68 0 .076-.013.156-.013.234h-2.783c0-1.962-1.6-3.553-3.554-3.553a3.55 3.55 0 0 0-3.554 3.553c0 .076.013.156.013.234h-2.77c0-3.326 2.95-6.06 6.523-6.148z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.gcp.category">GCP</span>
+          <h3 data-i18n="solutions.gcp.name">Google Cloud Platform Monitoring</h3>
+          <p data-i18n="solutions.gcp.description">Native GCP monitoring integration with Zabbix for compute, storage, and managed services.</p>
+        </a>
+
+        <a href="solutions/aws.html" class="solution-card fade-in stagger-1" data-category="aws">
+          <div class="solution-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.567.032-.863.104-.296.072-.583.16-.863.272a2.17 2.17 0 0 1-.263.104.456.456 0 0 1-.12.016c-.11 0-.16-.08-.16-.248v-.39c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167 4.579 4.579 0 0 1 1.006-.36 4.68 4.68 0 0 1 1.246-.16c.95 0 1.644.215 2.091.647.44.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm13.61 1.429a.496.496 0 0 1-.127.024c-.064 0-.144-.032-.24-.104-.095-.064-.2-.152-.304-.264-.103-.111-.2-.24-.287-.375-.095-.152-.184-.303-.264-.455a1.84 1.84 0 0 1-.486.335 4.38 4.38 0 0 1-.678.263 3.46 3.46 0 0 1-.79.136 3.08 3.08 0 0 1-.87-.12 2.08 2.08 0 0 1-.71-.367 1.75 1.75 0 0 1-.479-.623 2.15 2.15 0 0 1-.175-.902c0-.383.08-.718.248-1.006.167-.287.391-.527.678-.718.287-.192.63-.335 1.022-.431.39-.096.806-.144 1.245-.144.248 0 .502.016.766.048.263.032.534.08.806.144v-.51c0-.423-.095-.734-.287-.934-.192-.199-.51-.303-.958-.303a2.85 2.85 0 0 0-.67.08c-.216.055-.407.12-.567.191-.16.072-.28.136-.367.192a.553.553 0 0 1-.215.072c-.128 0-.192-.088-.192-.263v-.367c0-.136.016-.232.048-.288a.603.603 0 0 1 .208-.176c.16-.096.359-.176.598-.24a4.46 4.46 0 0 1 .814-.168 5.015 5.015 0 0 1 .87-.072c.95 0 1.644.208 2.083.622.431.415.654 1.054.654 1.915v2.499c0 .256-.136.383-.415.383h-.598zm-2.155-.774c.247 0 .487-.04.718-.12a1.65 1.65 0 0 0 .574-.343c.127-.127.223-.263.287-.415a1.78 1.78 0 0 0 .136-.479v-.518a7.363 7.363 0 0 0-.623-.104 5.53 5.53 0 0 0-.654-.04c-.455 0-.798.08-1.022.248-.224.167-.335.415-.335.742 0 .311.08.551.247.718.16.175.408.263.742.263h-.07zm6.076.85c-.112 0-.192-.016-.248-.048a.586.586 0 0 1-.152-.224l-1.693-5.57a1.463 1.463 0 0 1-.072-.287c0-.112.056-.175.175-.175h.934c.12 0 .2.016.255.048.056.032.096.096.12.208l1.213 4.779 1.125-4.779c.016-.12.056-.184.112-.216a.577.577 0 0 1 .263-.048h.766c.12 0 .2.016.263.048.056.032.096.104.112.216l1.14 4.84 1.252-4.84c.024-.12.072-.184.12-.216a.535.535 0 0 1 .255-.04h.886c.12 0 .184.056.184.168a.55.55 0 0 1-.016.12 1.11 1.11 0 0 1-.056.175l-1.74 5.571a.658.658 0 0 1-.16.224c-.056.032-.136.048-.248.048h-.822c-.12 0-.2-.016-.263-.056-.056-.04-.096-.112-.112-.224l-1.117-4.653-1.109 4.645c-.016.12-.056.192-.112.232-.056.04-.144.056-.263.056h-.822z"/>
+            </svg>
+          </div>
+          <span class="solution-card-category" data-i18n="solutions.aws.category">AWS</span>
+          <h3 data-i18n="solutions.aws.name">Amazon Web Services Monitoring</h3>
+          <p data-i18n="solutions.aws.description">Comprehensive AWS monitoring for EC2, RDS, Lambda, and 50+ AWS services.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-section fade-in">
+        <h2 data-i18n="cta.title">Ready to Transform Your Monitoring?</h2>
+        <p data-i18n="cta.description">Get in touch with our team to discuss your monitoring requirements and receive a customized solution.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="cta.button">Contact Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="8" fill="#111827"/>
+              <circle cx="20" cy="20" r="12" stroke="#00d4ff" stroke-width="2" fill="none"/>
+              <circle cx="20" cy="20" r="4" fill="#00d4ff"/>
+            </svg>
+            <span>ERP Monitoring</span>
+          </a>
+          <p data-i18n="footer.description">Professional monitoring solutions for enterprise systems. Powered by Zabbix.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.solutions">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="solutions/oracle-database.html">Oracle Database</a></li>
+            <li><a href="solutions/sap-s4hana.html">SAP S/4HANA</a></li>
+            <li><a href="solutions/sap-hana.html">SAP HANA</a></li>
+            <li><a href="solutions/aws.html">AWS</a></li>
+            <li><a href="solutions/gcp.html">GCP</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.company">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="footer.privacy">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer.terms">Terms of Service</a></li>
+            <li><a href="#" data-i18n="footer.imprint">Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-i18n="footer.copyright">2024 ERP Monitoring. All rights reserved.</span></p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
