@@ -582,6 +582,19 @@ img {
   height: 32px;
 }
 
+.platform-logo-img {
+  height: 32px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: var(--transition-normal);
+}
+
+.platform-logo:hover .platform-logo-img {
+  filter: brightness(1.1);
+}
+
 /* ============================================
    Solutions Grid
    ============================================ */
@@ -641,6 +654,14 @@ img {
   width: 32px;
   height: 32px;
   color: var(--card-accent, var(--accent-primary));
+}
+
+.solution-card-logo {
+  max-width: 48px;
+  max-height: 48px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .solution-card h3 {
@@ -895,6 +916,12 @@ img {
 .solution-hero-icon svg {
   width: 48px;
   height: 48px;
+}
+
+.solution-hero-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .solution-features-list {
