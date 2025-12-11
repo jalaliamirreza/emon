@@ -73,6 +73,11 @@ const translations = {
         description: 'In-depth monitoring for SAP HANA with memory analytics, backup status, and replication monitoring.',
         category: 'SAP'
       },
+      sapFiori: {
+        name: 'SAP Fiori Frontend Monitoring',
+        description: 'Real-time monitoring for SAP Fiori applications with user experience tracking and performance analytics.',
+        category: 'SAP'
+      },
 
       // PLM Solutions
       dassault: {
@@ -319,6 +324,11 @@ const translations = {
       sapHana: {
         name: 'SAP HANA Database Monitoring',
         description: 'Tiefgehendes Monitoring für SAP HANA mit Speicheranalysen, Backup-Status und Replikationsüberwachung.',
+        category: 'SAP'
+      },
+      sapFiori: {
+        name: 'SAP Fiori Frontend Monitoring',
+        description: 'Echtzeit-Monitoring für SAP Fiori-Anwendungen mit Benutzererfahrungs-Tracking und Performance-Analysen.',
         category: 'SAP'
       },
 
