@@ -186,15 +186,25 @@
         filterBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
-        // Filter cards
+        // Filter cards - hide non-matching first, then show matching
         solutionCards.forEach(card => {
           const category = card.dataset.category;
-          if (filter === 'all' || category === filter) {
-            card.style.display = 'block';
-            setTimeout(() => card.style.opacity = '1', 10);
+          const shouldShow = filter === 'all' || category === filter;
+
+          if (shouldShow) {
+            card.classList.remove('hidden');
+            card.style.display = '';
+            // Trigger reflow then fade in
+            requestAnimationFrame(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            });
           } else {
+            card.classList.add('hidden');
             card.style.opacity = '0';
-            setTimeout(() => card.style.display = 'none', 300);
+            card.style.transform = 'translateY(10px)';
+            // Hide immediately to allow grid reflow
+            card.style.display = 'none';
           }
         });
       });
