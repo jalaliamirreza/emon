@@ -463,6 +463,12 @@ img {
   height: 32px;
 }
 
+.platform-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
 .platform-icon:nth-child(5) { top: 5%; left: 20%; animation-delay: 0s; }
 .platform-icon:nth-child(6) { top: 15%; right: 10%; animation-delay: 0.5s; }
 .platform-icon:nth-child(7) { bottom: 20%; right: 5%; animation-delay: 1s; }
@@ -1376,6 +1382,11 @@ img {
   }
 
   .platform-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .platform-icon img {
     width: 24px;
     height: 24px;
   }
